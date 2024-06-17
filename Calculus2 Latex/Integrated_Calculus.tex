@@ -1,0 +1,177 @@
+\documentclass{article}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+\begin {document}
+\textbf{\center{\textcolor{blue}{CALCULUS (II) \\ Integrated Calculus}}\hrule} \
+
+\textbf{\centerline{\textcolor{red}{Definations}}}
+Calculus is the study of change on the input and the change on the output. \\ \
+
+Differenciation is changes in the variable. \\ \
+
+Integration is process of determining between the the input and output from the derivative. \\ \
+
+\textbf{\centerline{\textcolor{red}{Implicit and Parametric.}}}
+
+\textbf{\centerline{\textcolor{gray}{1. Impicit Differienciation.}}} \\ 
+
+$R(x)=x^2+4$  \dots\dots explicit \\ \
+
+$R(x)+x^2*R(x)+4=C$ \\ or \\ $f(x\ y)=0$ \dots\dots implicit  \\
+
+A function relating the output $y$ and input $x$ is said to be \textcolor{orange}{implicit} if it is in the of form:
+$$f(x\ y)=\ a \ constant$$ \centerline {or} 
+$$f(x\ y)=0$$ \\  
+eg 
+\[
+x+2xy^2+x^2=1 \tag {implicit function}
+\] 
+
+To determine $\frac{dy}{dx}$ for an impilicit function involving $x$ and $y$, we consider $y$ as a function of $x$ and differenciate the equation the way it is and then make $\frac{dy}{dx}$ the subject \\ \
+
+\newpage
+
+\hrule \
+
+\centerline{\textcolor{orange}{Example}} 
+
+To determine $\frac{dy}{dx}$ of;
+$$x+2xy^2+x^2=1$$
+we first cosider $y$ as a function of $x$ and then differenciate the equation the it is with respect to $x$ to obtain;
+$$1+2\left (y^2*1+x*2y*\frac{dy}{dx} \right )+2x=0$$
+\[
+	1+2y^2+4xy\frac{dy}{dx}+2x=0 \tag{equation 1}
+\]
+
+$$4xy\frac{dy}{dx}= -(1+2y^2+2x)$$ \\
+\[
+\frac{dy}{dx}=\frac{-(1+2y^2+2x)}{4xy} \tag {equation 2}
+\]
+\
+
+The process used in this example to determine $\frac{dy}{dx}$ is known as \textcolor{orange}{implicit differenciation} \\ \
+
+To obtain the second order derivative of an implicit function we consider $y$ as a function of $x$ and differenciate the function the way it is twice with respect to x and the make the second derivative the subject. \\ \
+
+\centerline{\textcolor{orange}{Example}} 
+
+To obtain the second order derrivative for the function given above we defferenciate the given  function twice, ie differentiate (equation 1) with respect to $x$ to obtain; 
+$$1+2y^2+4xy\frac{dy}{dx}+2x=0$$
+
+$$0+2\left(2y*\frac{dy}{dx}\right)+4\left(y*\frac{dy}{dx}+x\left(\frac{dy}{dx}\right)^2+xy\frac{d^2y}{dx^2}\right)+2=0$$
+
+$$4y\frac{dy}{dx}+4y\frac{dy}{dx}+4x\left(\frac{dy}{dx}\right)^2+4xy\frac{d^2y}{dx^2}+2=0$$
+
+$$4xy\frac{d^2y}{dx^2}=-\left(8y\frac{dy}{dx}+4x\left(\frac{dy}{dx}\right)^2+2\right)$$
+
+\hrule \
+
+\[
+\frac{d^2y}{dx^2}=\frac{-\left(8y\frac{dy}{dx}+4x\left(\frac{dy}{dx}\right)^2+2\right)}{4xy}  \tag {equation 3}
+\]
+
+\textcolor{orange}{NB} \\
+
+\begin {itemize}
+	\item If the second order derivative required interms of $x$ and $y$, (equation 2) is substituted in (equation 3).
+	\item (equation 2) is the gradient equation of the curve of the given function and (equatin 3) is the rate of change of this gradient.
+	\item If $y$ in a given function is the revenue and $x$ the number of units produced, then (equation 2) is said to be \textcolor{orange}{marginal revenue} of production $x$ and (equation 3) is the rate of change of marginal revenue with respect to marginal revenue.
+\end {itemize}
+
+Suppose that $x$ denotes one input and $y$ anothor in an industry, then if the production given by $f(x\ y)=a\ constant$ then this is said to be \textcolor{orange}{isoquent} of the company and $\frac{dy}{dx}$ of this function is said to be a \textcolor{orange}{marginal rate for technique substitution (MRTS)} which is equal to the change in $y$ if $x$ is changed by one unit in order to maintain constant production. \\ \
+
+\centerline{\textcolor{orange}{Example}}
+
+The output of a certain plant is given by $Q=0.06x^2+0.14xy+0.05y^2$ units per day where $x$ is the number of hours of skilled labour used and $y$ is the number of hours of unskilled labour used. Currently 60hrs of skilled labour and 300hrs of unskilled labour are used each day. Estimate the change of unskilled labour that should be maintained in order to obset 1hr increase in the skilled labour so that output will be maintained at it's current level. \\ \
+
+\centerline{\textcolor{orange}{Solution}} 
+Current production is;
+$$Q(60\  300)=47,736=C$$
+
+For this current production the isoquent is;
+$$Q=0.06x^2+0.14xy+0.05y^2$$
+
+Differentiating with respect to $x$ 
+$$0=0.12x+0.14 \left(y+x\frac{dy}{dx} \right)+0.1y\frac{dy}{dx}$$
+
+\newpage
+\hrule \
+
+
+$$0=0.12x+0.14y+0.14y+\frac{dy}{dx}(0.14x+0.1y)$$
+
+\[
+	\frac{dy}{dx}=\frac{-(0.12x+0.14y+0.14y)}{0.14x+0.1y} \tag {MRTS}
+\]
+
+$$dy=\left(    \frac{-(0.12x+0.14y+0.14y)}{0.14x+0.1y}   \right)dx$$ \\
+
+at 
+$$x=60$$
+$$y=300$$
+
+we have;
+$$dy=-1.28dx$$
+
+If $x$ changed with one unit, change in $y$ to offset thus; 
+\begin {align*}
+	dy &=-1.28*1 \\
+	 &=-1.28
+\end {align*}
+
+\textcolor{orange}{Conclution:} \\
+To offset an increase of 1hr of skilled labour, unskilled labour should be decrease by 1.28hrs
+
+\newpage
+\pagecolor{pink}
+
+\textbf{\centerline{\textcolor{blue}{ASSIGNMENT 1}}} \\ \hrule \
+
+\begin {enumerate}
+
+
+	\item Find \[ \frac{dy}{dx} \, and \, \frac{d^2y}{dx^2} \tag {Express your answer in terms of $x$ and $y$}\] 
+		\begin {enumerate}
+			\item $xy+x-2y=0$
+			\item $4x^2+9y^2-36=0$ \\ \
+
+		\end {enumerate}
+
+
+	\item \
+
+		\begin{enumerate}
+			\item Given that $x^2-xy+y^2=3$ show that $y''=\frac{18}{(x-2y)^3}$
+			\item Find the equation of the tangent and normal lines to $x^2-y^2-x=1$ at the point (1,1) \\ \
+
+		\end {enumerate}
+
+
+	\item At a certain company the output $Q$ is related to the input $u$ and $v$ by the equation;
+ $$Q(u\  v)=3u^2+\frac{2u+3v}{(u+v)^2}$$
+If the current level of input are $u=10$ and $v=25$, estimate in the input $v$ that should be made to obset the decrease of 0.7 unit in the unit $u$ so that the output would be maintained at it's current level. \\ \
+
+
+	\item At a certain factory, output $R$ is related to the input $x$ and $y$ by the equation;
+$$R(x\  y)=2x^3+3x^2y^2+(1+y)^2$$
+If the current levels of the of the input is $x=30$ and $y=20$, estimate the change in the in the input $y$ that should be made to obset the a decrease of 0.8 unit in the input $x$ so that the output would be maintained at the current level. 
+
+\end {enumerate}
+
+\end {document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
