@@ -1,0 +1,435 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{tikz}
+
+\title{\textcolor{red}{\textbf{HTML \$ CSS}}}
+\author{Sam}
+% \date{May 2024}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+\begin{document}
+
+\maketitle
+
+\begin{frame}
+    \centering{\textcolor{red}{\Large{HTML}}}
+\end{frame}
+\begin{frame}
+    \frametitle{\textcolor{red}{HTML Tutorial}}
+        \begin{itemize}
+            \item  HTML is the standard markup language for Web pages.
+        \end{itemize}
+        \begin{block}{Example}
+            $<$!DOCTYPE html$>$ \\
+            $<$html$>$\\
+           \hspace{30px} $<$head$>$\\
+           \hspace{50px} $<$title$>$Page Title$<$/title$>$\\
+           \hspace{30px} $<$/head$>$\\
+           \hspace{30px} $<$body$>$\\
+           \hspace{50px} $<$h1$>$This is a Heading$<$/h1$>$\\
+           \hspace{50px} $<$p$>$This is a paragraph.$<$/p$>$\\  
+           \hspace{30px} $<$/body$>$\\
+            $<$/html$>$\\
+        \end{block}
+\end{frame}
+
+\begin{frame}{What is HTML}
+    \begin{itemize}
+        \item HTML stands for Hyper Text Markup Language.
+        \item HTML is the standard markup language for creating Web pages.
+        \item HTML describes the structure of a Web page.
+        \item HTML consists of a series of elements
+        \item HTML elements tell the browser how to display the content
+        \item HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{A Simple HTML Document}
+    \begin{block}{a simple example}
+            $<$!DOCTYPE html$>$ \\
+            $<$html$>$\\
+           \hspace{30px} $<$head$>$\\
+           \hspace{50px} $<$title$>$Page Title$<$/title$>$\\
+           \hspace{30px} $<$/head$>$\\
+           \hspace{30px} $<$body$>$\\
+           \hspace{50px} $<$h1$>$First Heading$<$/h1$>$\\
+           \hspace{50px} $<$p$>$First Paragraph.$<$/p$>$\\  \hspace{30px} $<$/body$>$\\
+            $<$/html$>$\\
+    \end{block}
+\end{frame}
+
+\begin{frame}{Example Explained}
+    \begin{itemize}
+        \item The \alert{$<$!DOCTYPE html$>$} declaration defines that this document is an HTML5 document.
+        \item The \alert{$<$html$>$} element is the root element of an HTML page
+        \item The \alert{$<$head$>$} element contains meta information about the HTML page
+        \item The \alert{$<$title$>$} element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Example Explained}
+    \begin{itemize}
+        \item The \alert{$<$body$>$} element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+        \item The \alert{$<$h1$>$} element defines a large heading
+        \item The \alert{$<$p$>$} element defines a paragraph
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{HTML Element}
+    \begin{block}{Syntax}
+        $<$tagname$>$ Content goes here... $<$/tagname$>$
+    \end{block}
+    \begin{itemize}
+        \item HTML element is a basic building block of a web page that defines its structure and content.
+        \item An HTML element consists of a start tag, an end tag, and some content in between, such as text or other elements.
+        \item Some HTML elements are self-closing, meaning they do not need an end tag, such as \alert{$<$br$>$} or \alert{$<$img$>$}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{HTML Element}
+    \begin{itemize}        
+        \item HTML elements can have attributes that provide additional information or functionality, such as \alert{id, class, src, href,} etc.
+        \item HTML elements can be nested inside other elements to create complex layouts and designs.
+        \item HTML elements can be styled with CSS or manipulated with JavaScript to enhance the appearance and interactivity of a web page.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{HTML Page Structure}
+\centering
+{
+    \begin{tikzpicture}
+        \draw[black](0,0)rectangle(12,7.5);
+            \node at(0.8,7.2){$<$html$>$};
+            \node at(0.8,0.3){$<$/html$>$};
+        
+         \draw[black, fill=gray](1,4.5)rectangle(11,6.8);
+             \node at(1.8,6.5){$<$head$>$};
+             \node at(1.8,4.8){$<$/head$>$};
+          \draw[black](2,5.2)rectangle(10,6);
+          \node at(4.5,5.6){$<$title$>$Page title$<$/title$>$};
+          
+         \draw[black, fill=gray](1, 0.7)rectangle(11, 3.8);
+            \node at(1.8,3.5){$<$body$>$};
+            \node at(1.8, 1){$<$/body$>$};
+         \draw[black](2,2.5)rectangle(10,3.3);
+         \node at(4.5,2.9){$<$h1$>$This a heading$<$/h1$>$};
+         \draw[black](2,1.4)rectangle(10,2.2);
+         \node at(4.5,1.8){$<$p$>$This is a paragraph$<$/p$>$};
+    \end{tikzpicture}
+}
+\end{frame}
+
+\begin{frame}{HTML Style Attribute}
+    \begin{itemize}
+        \item The HTML style attribute is used to add styles to an element, such as color, font, size, and more.
+            \begin{block}{Syntax}
+                $<$tagname style$=$"property:value;"$>$
+            \end{block}
+        \item The property is a CSS property. The value is a CSS value.
+        \item You will learn more about CSS later in this tutorial.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{HTML Style Attribute}
+    \textcolor{red}{Background Color}
+    \begin{block}{Example}
+        \hspace{30px} $<$body style$=$"background-color:powderblue;"$>$\\
+        \hspace{50px} $<$h1$>$This is a Heading$<$/h1$>$\\
+        \hspace{50px} $<$p$>$This is a paragraph.$<$/p$>$\\  
+        \hspace{30px} $<$/body$>$\\
+    \end{block}
+\end{frame}
+
+\begin{frame}{HTML Comments}
+    \begin{itemize}
+        \item HTML comments are not displayed in the browser, but they can help document your HTML source code.
+        \item You can add comments to your HTML source by using the following syntax:
+            \begin{block}{Syntax}
+                $<$!- - Write your comments here - -$>$
+            \end{block}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{HTML Images}
+    \begin{itemize}
+        \item Images can improve the design and the appearance of a web page.
+        \item The HTML \alert{$<$img$>$} tag is used to embed an image in a web page.
+        \item Images are not technically inserted into a web page; images are linked to web pages. The \alert{$<$img$>$} tag creates a holding space for the referenced image.
+        \item The $<$img$>$ tag has two required attributes:
+            \begin{enumerate}
+                \item \alert{src} - Specifies the path to the image.
+                \item \alert{alt} - Specifies an alternate text for the image
+            \end{enumerate}
+    \end{itemize}
+    \begin{block}{Syntax}
+        $<$img src$=$"url" alt="alternatetext"$>$
+    \end{block}
+\end{frame}
+
+\begin{frame}{src attribute}
+    \begin{itemize}
+        \item The required \alert{src} attribute specifies the path (URL) to the image.
+            \begin{block}{Example}
+                $<$img src$=$"img\_chania.jpg" alt$=$"Flowers in Chania"$>$
+            \end{block}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{alt attribute}
+    \begin{itemize}
+        \item The required \alert{alt} attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the \alert{src} attribute, or if the user uses a screen reader).
+        \item The value of the \alert{alt} attribute should describe the image.
+        \item If a browser cannot find an image, it will display the value of the \alert{alt} attribute.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{HTML div}
+    \begin{itemize}
+        \item The $<$div$>$ element is used as a container for other HTML elements.
+        \item The $<$div$>$ element is often used to group sections of a web page together.
+            \begin{block}{Example}
+                $<$div$>$ \\
+                \hspace{30px}$<$h2$>$London$<$/h2$>$\\
+                \hspace{30px}$<$p$>$London is the capital city of England.$<$/p$>$\\
+                \hspace{30px}$<$p$>$London has over 13 million inhabitants.$<$/p$>$\\
+                $<$/div$>$\\
+            \end{block}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{HTML Input Tags}
+    \begin{itemize}
+        \item In HTML, the \alert{$<$input$>$} element is a fundamental form control that allows users to input data.
+        \item It can take various attributes to define its characteristics and behavior.
+        \item An \alert{$<$input$>$} tag can create different input types.
+        \item Examples include text fields, radio buttons, checkboxes, and more.
+        \item These input elements are often refered to as controls.
+    \end{itemize}
+    \begin{block}{Syntax}
+        $<$input type="..."$>$
+    \end{block}
+\end{frame}
+
+\begin{frame}{Input Types}
+Here are some examples of input types;
+    \begin{block}{1. Text input}
+       $<$input type="text" placeholder="Enter a text here"$>$ 
+    \end{block}
+    \begin{block}{2. Password input}
+       $<$input type="password"$>$ 
+    \end{block}
+    \begin{block}{3. tel input}
+       $<$input type="tel"$>$ 
+    \end{block}
+    \begin{block}{4. Search input}
+       $<$input type="Search"$>$ 
+    \end{block}
+\end{frame}
+
+\begin{frame}{Input Attribute}
+    \begin{itemize}
+        \item Input attributes add features and behaviors to the \alert{$<$input$>$} elements.
+        \item Attribute examples include \alert{size, value, maxlength, required,} and many more.
+    \end{itemize}
+    
+    \textbf{\textcolor{blue}{1. The value attribute}}\\
+    The \textbf{value} attribute is used to provide an initial (default) value inside the input control.
+    \begin{block}{Example}
+        $<$input type="text" value="John"$>$ 
+    \end{block}
+\end{frame}
+
+\begin{frame}{Input Attribute}
+    \textbf{\textcolor{blue}{2. The readonly attribute}}\\
+    \begin{itemize}
+        \item The input \alert{readonly} attribute specifies that an input field is read-only.
+        \item A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).
+    \end{itemize}
+    \begin{block}{Example}
+        $<$input type="text" value="John" readonly$>$ 
+    \end{block}
+\end{frame}
+
+\begin{frame}{Input Attribute}
+    \textbf{\textcolor{blue}{3. The placeholder attribute}}\\   \begin{itemize}
+        \item The input \alert{placeholder} attribute specifies a short hint that describes the expected value of an input field (a sample value or a short description of the expected format).
+        \item The short hint is displayed in the input field before the user enters a value.
+    \end{itemize}
+    \begin{block}{Example}
+        $<$input type="text" placeholder="Enter First name"$>$ 
+    \end{block}
+\end{frame}
+
+\begin{frame}{Input Attribute}
+    \textbf{\textcolor{blue}{4. The required attribute}}\\ 
+    \begin{itemize}
+        \item The input \alert{required} attribute specifies that an input field must be filled out before submitting the form.
+    \end{itemize}
+    \begin{block}{Example}
+        $<$input type="text" placeholder="Enter First name" required$>$ 
+    \end{block}
+\end{frame}
+
+\begin{frame}{Input Attribute}
+    \textbf{\textcolor{blue}{5. The list attribute}}\\  
+    \begin{itemize}
+        \item The input \alert{list} attribute refers to a \alert{$<$datalist$>$} element that contains pre-defined options for an $<$input$>$ element.
+    \end{itemize}
+    \begin{block}{Example}
+        $<$form$>$\\
+         \hspace{25px} $<$input list="browsers"$>$\\
+          \hspace{25px}$<$datalist id="browsers"$>$\\
+            \hspace{50px}$<$option value="Edge"$>$\\
+           \hspace{50px} $<$option value="Firefox"$>$\\
+            \hspace{50px}$<$option value="Chrome"$>$\\
+            \hspace{50px}$<$option value="Opera"$>$\\
+             \hspace{50px}$<$option value="Safari"$>$\\
+          \hspace{25px}$<$/datalist$>$\\
+        $<$/form$>$\\
+    \end{block}
+\end{frame}
+
+\begin{frame}{HTML Button tags}
+    \begin{itemize}
+        \item In HTML, buttons are clickable elements that take actions.
+        \item They can submit a form, reset a form, or perform a JavaScript function.
+        \item Buttons are defined with a \alert{$<$button$>$} or an \alert{$<$input$>$} tag.
+    \end{itemize}
+
+    \begin{block}{Syntax}
+        $<$button$>$submit$<$/button$>$\\
+        $<$input type="button" value="submit"$>$
+    \end{block}
+\end{frame}
+
+\begin{frame}{HTML Links}
+    \begin{itemize}
+        \item Links are found in nearly all web pages. Links allow users to click their way from page to page.
+        \item HTML links are hyperlinks.
+        \item You can click on a link and jump to another document.
+        \item The HTML \alert{$<$a$>$} tag defines a hyperlink. It has the following syntax:
+
+            \begin{block}{Syntax}
+                $<$a href="url"$>$link text$<$/a$>$
+            \end{block}
+
+        \item The most important attribute of the \alert{$<$a$>$} element is the \alert{href} attribute, which indicates the link's destination.
+        \item The link text is the part that will be visible to the reader.
+        \item Clicking on the link text, will send the reader to the specified URL address.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{HTML Links}
+    \begin{block}{Example}
+        $<$a href="https://www.w3schools.com/"$>$ Visit W3Schools.com! $<$/a$>$
+    \end{block}
+\end{frame}
+
+\begin{frame}{HTML Links - The target attribute}
+    \begin{itemize}
+        \item By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+        \item The \alert{target} attribute specifies where to open the linked document.
+        \item The \alert{target} attribute can have one of the following values:
+            \begin{enumerate}
+                \item \alert{\_self} - Default. Opens the document in the same window/tab as it was clicked.
+                \item \alert{\_blank} - Opens the document in a new window or tab
+                \item \alert{\_parent} - Opens the document in the parent frame
+            \end{enumerate}
+    \end{itemize}
+    \begin{block}{Example}
+        $<$a href="url" target="\_blank"$>$link text$<$/a$>$
+    \end{block}
+\end{frame}
+
+\begin{frame}{Link to an Email Address}
+    \begin{itemize}
+        \item Use \alert{mailto:} inside the \alert{href} attribute to create a link that opens the user's email program (to let them send a new email):
+    \end{itemize}
+    \begin{block}{Example}
+        $<$a href="mailto:someone@example.com"$>$Send email$<$/a$>$
+    \end{block}
+\end{frame}
+
+\begin{frame}{HTML Lists}
+    \textbf{\textcolor{blue}{1. Ordered Lists}}\\ 
+    \begin{itemize}
+        \item An ordered list starts with the \alert{$<$ol$>$} tag. Each list item starts with the \alert{$<$li$>$} tag.
+        \item The list items will be marked with numbers by default:
+    \end{itemize}
+    \begin{block}{Example}
+        $<$ol$>$\\
+          \hspace{20px}$<$li$>$Coffee$<$/li$>$\\
+          \hspace{20px}$<$li$>$Tea$<$/li$>$\\
+          \hspace{20px}$<$li$>$Milk$<$/li$>$\\
+        $<$/ol$>$
+    \end{block}
+\end{frame}
+
+\begin{frame}{HTML Lists}
+    \textbf{\textcolor{blue}{2. Unrdered Lists}}\\  
+    \begin{itemize}
+        \item An unordered list starts with the \alert{$<$ul$>$} tag. Each list item starts with the \alert{$<$li$>$} tag.
+        \item The list items will be marked with bullets (small black circles) by default:
+    \end{itemize}
+    \begin{block}{Example}
+        $<$ul$>$\\
+          \hspace{20px}$<$li$>$Coffee$<$/li$>$\\
+          \hspace{20px}$<$li$>$Tea$<$/li$>$\\
+          \hspace{20px}$<$li$>$Milk$<$/li$>$\\
+        $<$/ul$>$
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \centering{\textcolor{red}{\Large{CSS}}}
+\end{frame}
+
+\begin{frame}{CSS Tutorials}
+    \begin{itemize}
+        \item CSS stands for Cascading Style Sheets.
+        \item CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+        \item CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+        \item External stylesheets are stored in CSS files.
+    \end{itemize}
+\end{frame}
+\begin{frame}{Linking CSS to HTML}
+    \begin{itemize}
+        \item With an external style sheet, you can change the look of an entire website by changing just one file.
+        \item Each HTML page must include a reference to the external style sheet file inside the $<$link$>$ element, inside the head section.
+    \end{itemize}
+    \begin{block}{Example}
+        $<$!DOCTYPE html$>$ \\
+        $<$html$>$\\
+       \hspace{30px} $<$head$>$\\
+       \hspace{50px} $<$title$>$Page Title$<$/title$>$\\
+       \hspace{50px} $<$link rel="stylesheet" href="style.css"$>$\\
+       \hspace{30px} $<$/head$>$\\
+       \hspace{30px} $<$body$>$\\
+       \hspace{50px} .......\\
+       \hspace{30px} $<$/body$>$\\
+        $<$/html$>$\\
+    \end{block}
+\end{frame}
+
+\begin{frame}{External CSS}
+    \begin{itemize}
+        \item An external style sheet can be written in any text editor, and must be saved with a \alert{.css} extension.
+        \item The external \alert{.css} file should not contain any HTML tags.
+        \item Here is how the \alert{"style.css"} file looks:
+    \end{itemize}
+    \begin{block}{Example (Style.css)}
+        body \{ \\
+          \hspace{10px} background-color: lightblue;\\
+        \} \\
+        h1 \{ \\
+          \hspace{10px} color: blue; \\
+          \hspace{10px} margin-left: 20px; \\
+        \} \\
+    \end{block}
+\end{frame}
+
+\begin{frame}{CSS Syntax}
+
+\end{frame}
+
+\end{document}
